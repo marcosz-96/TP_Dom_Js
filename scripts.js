@@ -37,7 +37,7 @@ function add(){
 // Luego se crea la funcion que permite modificar los datos de la tabla según la fila seleccionada
 function modify_data(){
     const table = document.querySelector("table tbody");
-    const row_index = prompt("Ingrese el número de la fila que desea modificar:") -1;
+    const row_index = prompt("Ingrese el número de la fila que desea modificar:");
     
     // Primero se verfica que el ínidce ingresado sea válido antes de intentar modificar el dato
     if (row_index >= 0 && row_index < table.rows.length){
@@ -66,7 +66,7 @@ function modify_data(){
 // tambén se crea una función que permite eliminar los datos de la tabla según la fila seleccionada
 function delete_data(){
     const table = document.querySelector("table tbody");
-    const row_index = prompt("Ingrese el número de la fila que desea eliminar") -1;
+    const row_index = prompt("Ingrese el número de la fila que desea eliminar");
 
     // Se verifica que el índice ingresado sea válido
     if (row_index >= 0 && row_index < table.rows.length){

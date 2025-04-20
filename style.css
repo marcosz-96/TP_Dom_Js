@@ -1,6 +1,6 @@
 body{
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(142, 204, 243);
+    background-color: rgb(183, 183, 183);
     margin: 0;
     padding: 20px;
 }
@@ -35,7 +35,7 @@ button{
 }
 
 button:hover{
-    background-color: rgb(218, 31, 31);
+    background-color: rgb(177, 146, 146);
 }
 
 table{
@@ -43,7 +43,7 @@ table{
     border-collapse: collapse;
     margin: 0 auto;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
-    background-color: rgb(94, 218, 245);
+    background-color: rgb(241, 237, 235);
 }
 
 th, td{
@@ -58,11 +58,11 @@ th{
 }
 
 tr:nth-child(even){
-    background-color: coral;
+    background-color: rgb(241, 237, 235);
 }
 
 tr:hover{
-    background-color: blanchedalmond;
+    background-color: rgb(241, 237, 235);
 }
 @media(max-width: 600px){
     table, thead, tbody, th, td, tr{
