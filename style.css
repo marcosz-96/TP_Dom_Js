@@ -1,0 +1,96 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(142, 204, 243);
+    margin: 0;
+    padding: 20px;
+}
+
+h2{
+    border-radius: 10px;
+    background-color: rgb(232, 208, 208);
+    padding: 10px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.button-container{
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 20px;
+    right: 25px;
+}
+
+button{
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(224, 222, 203);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    transition: background-color 0.5s;
+}
+
+button:hover{
+    background-color: rgb(218, 31, 31);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgb(94, 218, 245);
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: left;
+}
+
+th{
+    background-color: #f6b868;
+    color: rgb(87, 6, 6);
+}
+
+tr:nth-child(even){
+    background-color: coral;
+}
+
+tr:hover{
+    background-color: blanchedalmond;
+}
+@media(max-width: 600px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+    th{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr{
+        margin-bottom: 15px;
+    }
+    td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    td::before{
+        position: absolute;
+        left: 10px;
+        width: 40%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+    }
+    td:nth-of-type(1)::before { content: "id";}
+    td:nth-of-type(2)::before { content: "name";}
+    td:nth-of-type(3)::before { content: "surname";}
+    td:nth-of-type(4)::before { content: "nationality";}
+}
